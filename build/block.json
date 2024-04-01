@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/spider-dev-alert-box",
+  "version": "0.1.0",
+  "title": "Spider Dev Alert Box",
+  "category": "text",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "spider-dev-alert-box",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "headingText": {
+      "type": "string",
+      "selector": "h2",
+      "source": "html",
+      "default": "Notice Message! Your message here"
+    },
+    "text": {
+      "type": "string",
+      "selector": "p",
+      "source": "html",
+      "default": "Notice Message! Your message here"
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    },
+    "alignment": {
+      "type": "string",
+      "default": "none"
+    },
+    "displayType": {
+      "type": "string",
+      "default": "alertBox"
+    }
+  }
+}
